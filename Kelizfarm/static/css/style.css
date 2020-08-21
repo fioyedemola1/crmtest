@@ -1,0 +1,300 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*----------------------gloabl---------------*/
+a {
+  text-decoration: none;
+  color: green;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 2.5rem;
+}
+h2 {
+  font-family: "Bellota", cursive;
+}
+h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.3rem;
+}
+
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-family: "Bellota", cursive;
+}
+.container {
+  margin: 0.5vw;
+}
+p {
+  font-family: "Krona One", sans-serif;
+}
+
+/*----------------------global---------------*/
+
+/*----------------------Navbar---------------*/
+
+.nav {
+  background: white;
+  padding: 0.2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}
+.nav-brand .text-gray {
+  color: green;
+  font-size: 60px;
+}
+.nav .nav-menu {
+  justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  widows: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.4rem;
+  background-color: green;
+}
+.collapse {
+  height: 30rem;
+}
+.nav .nav-items {
+  display: flex;
+  margin: 0;
+}
+
+.nav .nav-items .nav-link {
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-size: 1.1rem;
+  color: gray;
+}
+
+.nav .nav-items .nav-link:hover {
+  background-color: green;
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: white;
+}
+.nav-brand {
+  display: flex;
+  padding-right: 0.7em;
+}
+.nav .nav-brand a {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+}
+
+.nav .social {
+  padding: 2rem 0;
+}
+
+.social i {
+  padding: 2 0.3rem;
+}
+
+.nav .social i:hover {
+  color: red;
+}
+
+/*-------x---------------Navbar-----x----------*/
+
+/*-------Site con
+/*----------------------Main content----------------*/
+/*----------------------site title----------------*/
+main .site-title {
+  background: url(../assets/image9.jpg);
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: blue;
+}
+
+main .site-title h1,
+h13 {
+  margin: 0.3rem;
+}
+
+main .site-title .btn {
+  margin: 1.8rem;
+  color: #fff;
+  background: green;
+}
+
+main .site-title .btn:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: green;
+  font-weight: bolder;
+}
+
+/*-----------x-----------site title--------x--------*/
+/*------------------      carousel ------------*/
+main .blog {
+  /* background: url(../assets//image10.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;*/
+  background: rgba(159, 233, 116, 0.726);
+  height: 80%;
+  width: 100%;
+}
+
+main.blog .blog-post {
+  padding-top: 6rem;
+}
+main .blog .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+main .blog .btn-blog {
+  padding: 0.7rem 2rem;
+  background: skyblue;
+  margin: 0.5rem;
+}
+main .blog .blog-title {
+  padding: 2rem 0;
+}
+
+main .blog-content span {
+  display: block;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+section .container .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+  color: black;
+  background: transparent;
+  font-size: rem;
+}
+
+/*------------------  x    carousel xx------------*/
+
+/*--------site content------------*/
+section .jumbotron {
+  font: 2em;
+  background: linear-gradient(to right, white, green);
+}
+
+/*--------site content------------*/
+
+/*--------side bar------------*/
+/*-------------x---------Main content-----------x-----*/
+
+/* Footer*/
+
+footer.footer {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.863);
+  position: relative;
+  box-sizing: border-box;
+  color: white;
+}
+.footer .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .container .logo-footer {
+  padding-top: 2rem;
+  color: white;
+}
+.footer .container .logo-footer > a {
+  padding-top: 2rem;
+  color: white;
+  background-color: transparent;
+}
+
+.footer .social {
+  padding: 3rem 1rem;
+  display: flex;
+  float: right;
+}
+.footer  .social i {
+  float: right;
+}
+.footer .social i:hover {
+  color: red;
+}
+
+footer .container .location h2,
+p {
+  text-align: center;
+}
+
+/*-----------------------viewport----------------*/
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu,
+  .nav.nav-items {
+    flex-direction: column;
+  }
+  .nav .toggle-collapse {
+    display: initial;
+  }
+  .nav-brand {
+    justify-content: center;
+  }
+  main .site-content .post-content > .post-image .post-info {
+    background: skyblue;
+    padding: 1rem;
+    background-size: 30%;
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    border-radius: 2rem;
+  }
+}
+
+/*-----------------------viewport----------------*/
